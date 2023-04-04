@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import reader from "../assets/reader.json";
+import book from "../assets/book.json";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ const Home = () => {
       {/* Lottie Animation */}
       <div className="relative lg:w-1/2 ">
         <div className="w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96">
-          <Lottie animationData={reader} loop={true} />
+          <Lottie animationData={book} loop={true} />
         </div>
       </div>
     </div>
