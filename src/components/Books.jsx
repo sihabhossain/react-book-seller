@@ -4,6 +4,10 @@ import { useLoaderData } from "react-router-dom";
 const Books = () => {
   const { books } = useLoaderData();
 
+  const handleBuyNow = () => {
+    console.log("hey lil bro");
+  };
+
   return (
     <div className="my-container">
       <div className="grid gap-6 mb-8 lg:grid-cols-4 sm:grid-cols-2">
@@ -20,6 +24,12 @@ const Books = () => {
               <p>{book.subtitle}</p>
               <br />
               <p>Price: {book.price}</p>
+              <button
+                onClick={handleBuyNow}
+                className="text-white bg-blue-800 p-3 mt-2 rounded-md"
+              >
+                Buy Now
+              </button>
             </div>
           </div>
         ))}

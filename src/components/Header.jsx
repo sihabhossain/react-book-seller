@@ -37,6 +37,23 @@ const Header = () => {
               Books
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/Register"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Register
+            </NavLink>
+          </li>
           <li>
             <NavLink
               to="/about"
